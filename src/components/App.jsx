@@ -3,7 +3,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { Contacts } from './Contacts/Contacts';
 import { Layout } from './Layuot';
 import { Section } from './Section/Section';
-import { FilterName } from './Filter/Filter';
+import { Filter } from './Filter/Filter';
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
       <ContactForm></ContactForm>
 
       <Section title="Contacts">
-        <FilterName></FilterName>
+        <Filter></Filter>
         <Contacts></Contacts>
       </Section>
 

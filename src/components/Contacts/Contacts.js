@@ -13,11 +13,10 @@ export const Contacts = () => {
   };
 
   const selectedName = contacts.filter(elem => {
-    console.log(elem.name);
-    if (filter !== '') {
-      elem.name.toLowerCase().includes(filter);
+    if (filter === '') {
+      return contacts;
     }
-    return contacts;
+    return elem.name.toLowerCase().includes(filter.toLowerCase());
   });
 
   return (

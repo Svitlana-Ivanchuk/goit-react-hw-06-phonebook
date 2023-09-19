@@ -12,9 +12,9 @@ export const deleteContact = contactId => {
   };
 };
 
-export const filterByName = valueName => {
+export const filterByName = value => {
   return {
     type: 'filter/filterByName',
-    payload: valueName,
+    payload: value,
   };
 };
