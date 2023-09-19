@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { StyledBtnDelete, StyledContact, StyledList } from './Contacts.styled';
 import { TiUserDelete } from 'react-icons/ti';
 import { getContacts, getFilter } from 'redux/selectors';
-import { deleteContact } from 'redux/actions';
+import { deleteContact } from 'redux/contactsSlice';
 
 export const Contacts = () => {
   const contacts = useSelector(getContacts);
